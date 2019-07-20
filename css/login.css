@@ -84,6 +84,7 @@ header{position:fixed;top:0; z-index:999;}
     text-align: center;
     
 }
+
 .hed-ul{
     float: left;
 	width:550px;height:72px;
@@ -95,28 +96,33 @@ header{position:fixed;top:0; z-index:999;}
     position: relative;
     text-align: center;
 }
+
+.older {
+    color: #333333;
+    display: inline-block;
+    font-size: 15px;
+    height: 72px;
+    min-width: 84px;
+    text-align: center;
+    margin-left: 20px;
+}
 .dh-xl {
+    display: none;
     background-color: #ff7b33;
     border-radius: 6px;
-    bottom: -302px;
-    display: none;
     height: auto;
-    left: -32px;
     position: absolute;
-    width: 145px;
+    left: -25px;
+    width:145px;
     box-shadow: 0 0 8px #d0d3d5;
     z-index: 9999;
 }
-.xl-xs {
-    background-position: -195px 0;
-    display: block;
-    height: 130px;
-    width: 100%;
-}
+
 .dh-xl a {
     display: block;
     height: 50px;
     line-height: 50px;
+    text-align: center;
     width: 100%;
     background-color: #ff7b33;
     border-radius: 6px;
@@ -127,11 +133,7 @@ header{position:fixed;top:0; z-index:999;}
     width: 123px;
     height: 49px;
 }
-.dh-xl a:first-child .xl-1 {
-    background-position: 10px -346px;
-}
-
-.xl {
+.xl{
     display: block;
     float: left;
     height: 30px;
@@ -139,8 +141,54 @@ header{position:fixed;top:0; z-index:999;}
     margin-top: 10px;
     width: 40px;
 }
+.dh-xl a:first-child .xl-1 {
+    background-position: 10px -346px;
+}
+.dh-xl a:nth-child(2) .xl-2 {
+    background-position: 10px -370px;
+}
+.dh-xl a:nth-child(3) .xl-3 {
+    background-position: 10px -406px;
+}
+.dh-xl a:nth-child(4)  .xl-4 {
+    background-position: 10px -426px;
+}
+.dh-xl a:nth-child(5) .xl-5 {
+    background-position: 10px -456px;
+}
+.dh-xl a:last-child .xl-6 {
+    background-position: 10px -488px;
+}
+.xl-r{
+    font-size: 12px;
+    color: #fff8f4;
 
+}
+/*下载APP 图片*/
+.xz-xl{
+    display: none;
+    width: 146px;
+    height: 180px;
+    background-color: #ff7b33;
+    background-position: -203px 0;
+    border-radius: 6px;
 
+    position: absolute;
+    left: -31px;
+    bottom: -193px;
+    padding-top: 10px;
+
+    box-shadow: 0 0 8px #d0d3d5;
+    -webkit-box-shadow: 0 0 8px #d0d3d5;
+
+    z-index: 200;
+}
+.xl-xs.ico {
+    background-position: -195px 0;
+    display: block;
+    height: 130px;
+    width: 100%;
+}
 .mar-r .dh-fl{
 float:left; width:84px;height:72px;
 }
@@ -222,14 +270,7 @@ float:left; width:84px;height:72px;
     margin-right: 10px;
 
 }
-.older {
-    color: #333333;
-    display: inline-block;
-    font-size: 15px;
-    height: 72px;
-    min-width: 84px;
-    text-align: center;
-}
+
 .hed .hed-su {
     height: 42px;
     padding: 15px 0;
