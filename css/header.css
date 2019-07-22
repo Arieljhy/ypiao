@@ -9,6 +9,16 @@ i{font-style:normal;}
 i, cite, em, var, address, dfn {
     font-style: italic;
 }
+a{
+    color: #333;
+    cursor: pointer;
+    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,STHeiti,MingLiu,STHeiti,MingLiu;
+    outline: medium none;
+    text-decoration: none;
+}
+.ico {
+    background-image: url(../img/login/jl.png);
+}
 
 /* Í·²¿ */
 header{position:fixed;top:0; z-index:999;}

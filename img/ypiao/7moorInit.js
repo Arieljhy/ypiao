@@ -86,11 +86,11 @@ var onlineData = undefined;
 
 (function () {
     var scripts = {
-        localInit: "7moorInit.js"/*tpa=https://webchat.7moor.com/javascripts/7moorInit.js*/,
-        pcChat: qimo_config.chatHost + "javascripts/QiMoIMSDK.js",
+        localInit: "7moorInit.staticjs"/*tpa=https://webchat.7moor.com/javascripts/7moorInit.js*/,
+        pcChat: qimo_config.chatHost + "javascripts/QiMoIMSDK.staticjs",
         // json2: qimo_config.chatHost + "javascripts/json2.js",
-        ubaJs:"uba.min.js"/*tpa=https://user-analysis.7moor.com/js/uba.min.js*/,
-        mobileBackJs: qimo_config.chatHost + "javascripts/mobileBackFunc.js"
+        ubaJs:"uba.min.staticjs"/*tpa=https://user-analysis.7moor.com/staticjs/uba.min.staticjs*/,
+        mobileBackJs: qimo_config.chatHost + "javascripts/mobileBackFunc.staticjs"
     };
     var makeQuery = function (json) {
         json = json || {};

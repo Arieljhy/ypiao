@@ -9,6 +9,9 @@ i{font-style:normal;}
 i, cite, em, var, address, dfn {
     font-style: italic;
 }
+.ico {
+    background-image: url(../img/login/jl.png);
+}
 
 /* 头部 */
 header{position:fixed;top:0; z-index:999;}
@@ -439,9 +442,7 @@ a {
     align-items:center;
     padding: 0 0;
 }
-.ico {
-    background-image: url(../img/login/jl.png);
-}
+
 .footer_bomr span:first-child {
     width: 84px;
     height: 55px;
@@ -607,26 +608,6 @@ input, textarea, select, button {
 input, textarea, select, button, meter, progress {
     -webkit-writing-mode: horizontal-tb !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 a{
