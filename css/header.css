@@ -183,6 +183,7 @@ header{position:fixed;top:0; z-index:999;}
     background-position: -203px 0;
     border-radius: 6px;
 
+
     position: absolute;
     left: -31px;
     bottom: -193px;
@@ -199,6 +200,18 @@ header{position:fixed;top:0; z-index:999;}
     height: 130px;
     width: 100%;
 }
+.xz-xl .xz-wz{
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size:12px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+
+
 .mar-r .dh-fl{
     float:left; width:84px;height:72px;
 }

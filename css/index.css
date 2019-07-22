@@ -241,6 +241,127 @@
 
 
 
+/*演出*/
+.yanchu{
+    background: #fff;
+    padding-bottom: 150px;
+}
+.yanchu-ph{
+    height:290px ;
+    margin-top: 34px;
+}
+.radius{
+    border-radius: 3px;
+}
+.ph-o{
+    width: 588px;
+    height: 100%;
+    float: left;
+}
+.ph-by{
+    width: 534px;
+    padding: 0 27px;
+    margin-right: 24px;
+    box-shadow: 0 0 8px #d0d3d5;
+
+    position: relative;
+}
+.by-top{
+    width: 588px;
+    height: 3px;
+    background-color: #ff7583;
+    border-radius:3px 3px 0 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ph-by ul li{
+    width: 100%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.ph-by ul li:first-child{
+    border-bottom: 0;
+    font-size: 16px;
+    color:#ff7502;
+    margin-top: 10px;
+}
+.by{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.by-mc{
+    color: #f60;
+}
+.ph-by ul .by-title{
+    width: 357px;
+    font-size: 12px;
+    color: #203e4f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ph-yr{
+    width: 534px;
+    padding:0 27px;
+    box-shadow: 0 0 8px #d0d3d5;
+    overflow: hidden;
+
+    position: relative;
+}
+.ph-yr .by-top{
+    background-color: #96a7fa;
+}
+.rmyr{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    font-size: 16px;
+    color: #96a7fa;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.yr-on{
+    display: block !important;
+    list-style: none;
+}
+.ph-yr ul .yr-tx{
+    float: left;
+
+    width: 74px;
+    height: 74px;
+    line-height: 175px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px #96a7fa;
+
+    margin-right: 79px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.ph-yr ul .yr-tx:nth-child(4) ,.ph-yr ul .yr-tx:nth-child(8){
+    margin-right: 0px;
+}
+.tx-tx{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*重复部分*/
+.tyss,.hjgj,.yyh,.qyzt{
+    background: #fff;
+}
+
 
 
 
