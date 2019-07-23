@@ -12,7 +12,7 @@ i, cite, em, var, address, dfn {
 a{
     color: #333;
     cursor: pointer;
-    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,STHeiti,MingLiu,STHeiti,MingLiu;
+    font-family: "Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,STHeiti,MingLiu,STHeiti,MingLiu;
     outline: medium none;
     text-decoration: none;
 }
@@ -22,28 +22,42 @@ a{
 
 
 
-/* ÍÆ¼ö */
+/* ï¿½Æ¼ï¿½ */
 
 
 .recommendation {
     width: 1200px;
     margin: 20px auto 0;
+    height:150px;
     line-height: 35px;
     font-size: 14px;
     overflow: hidden;
-}
-.recommendation ul{float:left;}
 
+    position: relative;
+}
+.recommendation::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.recommendation ul{
+    position: absolute;
+    top: 0;
+    left:0;
+
+}
 .recommendation li {
+    position: relative;
     float: left;
     padding: 0 10px;
 }
 .recommendation a {
+    font-size: 14px;
     color: #BCBCBC;
 }
 
+
 .footer_bom {
-    diaplay: flex;
     text-align:center;
 }
 .footer_tit {
@@ -54,14 +68,12 @@ a{
     font-weight: bold;
     color: #939393;
 }
-
-
 .footer_bomr {
     display: flex;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
-    padding: 0 0;
+
 }
 .ico {
     background-image: url(../img/login/jl.png);
@@ -108,18 +120,20 @@ a{
     background-position: 0 -2100px;
 }
 
-/*µ×²¿1111*/
+/*ï¿½×²ï¿½1111*/
 .my {
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
-    width: 100%;
+    position: relative;
+
 }
 .my-top {
     height: 37px;
     padding: 15px 0;
-    width: 100%;
-    min-width:1600px;
     border-bottom: 1px solid #E9E9E9;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-around;
 }
 .top-div {
     float:left;
@@ -132,10 +146,29 @@ a{
     text-align: center;
     width: 400px;
 }
+.ml{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position:0px -1000px;
+}
+.mc{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position:0px -1040px;
+}
+.mr{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position:0px -1073px;
+}
+
+
 
 .my-c{width:100%;}
 .my-c .c-w {
-
     height: 80px;
     padding: 15px 0;
 }
@@ -162,6 +195,34 @@ a{
 .c-w .c-l div a {
     font-size: 16px;
     color: rgba(255,102,51,1);
+}
+.c-w .c-r{
+    float: right;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.b-wb{
+   display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-position:0 -1116px;
+}
+.b-wx{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position:0 -1160px;
+}
+.b-yp{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position:0 -1205px;
 }
 
 
@@ -193,7 +254,7 @@ button, input, select, textarea {
 
 body, button, input, select, textarea {
     color: rgb(102, 102, 102);
-    font: 12px/1.5 "Microsoft YaHei", Î¢ÈíÑÅºÚ, STHeiti, MingLiu;
+    font: 12px/1.5 "Microsoft YaHei", Î¢ï¿½ï¿½ï¿½Åºï¿½, STHeiti, MingLiu;
 }
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, button, input, textarea, th, td {
     margin: 0;

@@ -2,12 +2,12 @@ const express = require('express');
 const pool = require('../../pool.js');
 var router = express.Router();
 
-// 登录
+// ceshi
 router.get('/text/:uid',(req,res)=>{
     var $uid= req.params.uid;
     console.log($uid);
     var sql="select * from yp_user where uid=?";
-    pool.query(sql,[$uid],(err,result)=>{
+    pool.query(sql,[$uid],(err,result)=>{console.log(result);
         if(result.length>0){
             res.send("1");
         }
