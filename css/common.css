@@ -1,0 +1,42 @@
+/*css hack*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, dl {
+    list-style: outside none none;
+}
+i{font-style:normal;}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+a{
+    color: #333;
+    cursor: pointer;
+    font-family: "Microsoft YaHei", MingLiu, STHeiti, serif;
+    outline: medium none;
+    text-decoration: none;
+}
+
+body{
+    color: #e8e8e8;
+}
+
+.ico {
+    background-image: url(../img/login/jl.png);
+}
+
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.w{
+    margin:0 auto;
+    position:relative;
+    width: 1200px !important;
+}
+
+
+

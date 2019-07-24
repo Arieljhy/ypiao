@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>有票网北京站-2019北京演唱会,音乐会,话剧,儿童剧,中超足球,CBA篮球等折扣门票交易平台！</title>
-    <link rel="stylesheet" href="./css/header.css"/>
-    <link rel="stylesheet" href="./css/index.css"/>
+    <script src="./js/staticjs/jquery-1.7.min.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/index.css"/>
+
     <script src="js/staticjs/jquery-1.7.min.js"></script>
 </head>
 <body style="background: #e8e8e8">
+
 <header class="hed">
     <div class="hed w">
         <div class="hed-log" ><a href="/"><i class="hedlog ico" ></i ></a></div>
@@ -315,6 +321,7 @@
 
     </div>
 </header>
+
 <!--；轮播图-->
 <div class="banner w">
     <img class="banner-tu" src="./img/index/lbt1.jpg" alt=""/>
@@ -329,7 +336,6 @@
     <div class="button left"><span><</span></div>
 
 </div>
-
 <!--聚合模块-->
 <div class="juhe w">
     <div class="l juhe-x">
@@ -348,7 +354,6 @@
         </a>
     </div>
 </div>
-
 <!--折扣票区-->
 <div class="w lb-qs lb-qs1" id="louti2">
     <div class="qs-t">
@@ -1118,6 +1123,11 @@
     </div>
 </div>
 
+
+
+
+
+
 <div class="recommendation w">
     <ul>
         <li class="title">热门推荐：</li>
@@ -1197,7 +1207,7 @@
             <div class="c-r l">
                 <div>
                     <i class="tcblock"></i>
-								<span style="opacity:0;">
+                    <span style="opacity:0;">
 										<i class="ico c-rbg"></i>
 										<i class="b-wb ico"></i>
 								</span>
@@ -1206,7 +1216,7 @@
 
                 <div>
                     <i class="tcblock"></i>
-								<span style="opacity:0;">
+                    <span style="opacity:0;">
 										<i class="ico c-rbg"></i>
 										<i class="b-wx ico "></i>
 								</span>
@@ -1215,7 +1225,7 @@
 
                 <div>
                     <i class="tcblock"></i>
-								<span style="opacity:0;">
+                    <span style="opacity:0;">
 										<i class="ico c-rbg"></i>
 										<i class="b-yp ico "></i>
 								</span>
@@ -1245,18 +1255,13 @@
     </div>
 
 </footer>
-<script src="js/staticjs/jquery-1.7.min.js"></script>
-
-<script type="text/javascript">
-
+<script>
     /*城市列表的隐藏与显示*/
     $('.hed-cshi').hover(function(){
         $('.chengshi').show()
     },function(){
         $('.chengshi').hide()
     });
-
-
     $('.chenshi').hover(function(){
         $('.chengshi').show()
     },function(){
@@ -1277,7 +1282,6 @@
     },function(){
         $('.xz-xl').hide()
     });
-
     /*轮播图*/
     var count = 0 ; //定义全局变量count来表示当前图片
     function run(){
@@ -1292,14 +1296,12 @@
         $('.banner img').eq(count).fadeIn(300).siblings('img').fadeOut(300);
         $('.banner ul li').eq(count).css('background','#f40').siblings('li').css('background','#fff');
     }
-
     var timer = setInterval(run,2000); //设置定时器
     $('.banner').hover(function(){ //设置鼠标移入移出事件
         clearInterval(timer);
     },function(){
         timer = setInterval(run,2000);
     })
-
     $('.banner ul li').mouseenter(function(){ //设置移入圆点事件
         count = $(this).index();
         count = count ==3?0:count;
@@ -1312,7 +1314,9 @@
     $('.banner .left').click(function(){ //设置左键按钮点击事件
         reverserun();
     })
+
 </script>
+
 
 </body>
 </html>

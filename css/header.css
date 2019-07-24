@@ -1,26 +1,4 @@
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, button, input, textarea, th, td {
-    margin: 0;
-    padding: 0;
-}
-ul, ol, dl {
-    list-style: outside none none;
-}
-i{font-style:normal;}
-i, cite, em, var, address, dfn {
-    font-style: italic;
-}
-a{
-    color: #333;
-    cursor: pointer;
-    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,STHeiti,MingLiu,STHeiti,MingLiu;
-    outline: medium none;
-    text-decoration: none;
-}
-.ico {
-    background-image: url(../img/login/jl.png);
-}
-
-/* Í·²¿ */
+/* Í·ï¿½ï¿½ */
 header{position:fixed;top:0; z-index:999;}
 .hed{
     height:71px;
@@ -29,11 +7,6 @@ header{position:fixed;top:0; z-index:999;}
     line-height:71px;
     border-bottom:1px solid #e2e5e6;
 
-}
-.w{
-    margin:0 auto;
-    position:relative;
-    width: 1200px !important;
 }
 .hed-log{
     float:left;
@@ -174,7 +147,7 @@ header{position:fixed;top:0; z-index:999;}
     color: #fff8f4;
 
 }
-/*ÏÂÔØAPP Í¼Æ¬*/
+/*ï¿½ï¿½ï¿½ï¿½APP Í¼Æ¬*/
 .xz-xl{
     display: none;
     width: 146px;
@@ -299,11 +272,6 @@ header{position:fixed;top:0; z-index:999;}
     padding: 15px 0;
     position: relative;
 }
-
-.r {
-    float: right !important;
-}
-
 .hed .hed-su .su-ipt {
     display:block;
     border: 1px solid #dedede;

@@ -1,8 +1,8 @@
-/*ÂÖ²¥Í¼*/
+/*ï¿½Ö²ï¿½Í¼*/
 .banner{
     width: 1200px;
     height: 365px;
-    margin: 80px auto 0 auto;
+    margin-top: 80px;
     position: relative;
     border:1px solid black;
     overflow: hidden;
@@ -63,7 +63,7 @@
     line-height: 50px;
     color: rgba(255,255,255,0.5);
 }
-/*¾ÛºÏÄ£¿é*/
+/*ï¿½Ûºï¿½Ä£ï¿½ï¿½*/
 .juhe{
     height: 188px;
     margin-top: 24px;
@@ -91,7 +91,7 @@
     width: 100%;
     height: 100%;
 }
-/*ÕÛ¿ÛÆ±Ä£¿é*/
+/*ï¿½Û¿ï¿½Æ±Ä£ï¿½ï¿½*/
 .lb-qs{
     margin-top: 20px;
 }
@@ -241,7 +241,7 @@
 
 
 
-/*ÑÝ³ö*/
+/*ï¿½Ý³ï¿½*/
 .yanchu{
     background: #fff;
     padding-bottom: 150px;
@@ -357,7 +357,7 @@
     transform:translate(-50%,-50%);
 }
 
-/*ÖØ¸´²¿·Ö*/
+/*ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .tyss,.hjgj,.yyh,.qyzt{
     background: #fff;
 }
