@@ -19,9 +19,8 @@ a{
 }
 
 body{
-    color: #e8e8e8;
+    background: #f1f5f8;
 }
-
 .ico {
     background-image: url(../img/login/jl.png);
 }

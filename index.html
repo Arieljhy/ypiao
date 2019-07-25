@@ -1304,7 +1304,7 @@
     })
     $('.banner ul li').mouseenter(function(){ //设置移入圆点事件
         count = $(this).index();
-        count = count ==3?0:count;
+        count = count ===3?0:count;
         $('.banner img').eq(count).fadeIn(300).siblings('img').fadeOut(300);
         $('.banner ul li').eq(count).css('background','#f40').siblings('li').css('background','#fff');
     })

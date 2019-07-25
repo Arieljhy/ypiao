@@ -283,3 +283,17 @@ header{position:fixed;top:0; z-index:999;}
     width: 246px;
     margin:auto 0;
 }
+
+
+/*面包屑导航*/
+.older-jc{
+    font-size:12px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #919d9e;
+    margin-top: 70px;
+    margin-bottom: 5px;
+
+}
+.older-jc a{ color: #919d9e}
