@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
      <script src="../js/staticjs/jquery-1.7.min.js"></script>
-     <title>会员登录-有票网</title>
+     <title>会员注册-有票网</title>
      <link rel="stylesheet" href="../css/common.css">
      <link rel="stylesheet" href="../css/header.css">
 	 <link rel="stylesheet" href="../css/login.css">
@@ -295,7 +295,6 @@
                     </span>
                 </li>
             </ul>
-
 		
 		<div class="r hed-su" onkeydown="keyLogin3(event)">
 			<form id="key-search" method="get" action="">
@@ -324,20 +323,35 @@
                 <div class="DengluZhuce"><!-- 登录注册 -->
                     <ul class="dz-xuanze">
                         <li>
-                            <a href="javascript:;" class="a-on">登录</a >
-                            <a href="register.html">注册</a >
+                            <a href="login.html" >登录</a >
+                            <a href="javascript:;" class="a-on">注册</a >
                         </li>
                     </ul>
-										<form id="login" action="#" method="post">
+										<form id="register" action="#" method="post">
 												<input type="hidden" name="_csrf" value=" ">
-												<div class="dz-input input-denglu">
+												<div class="dz-input input-zhuce">
 														<div class="tanchuang-tishi"></div>
-														<input name="mobile" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
-														<input name="password" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
-														<input type="submit" class="dz-denglu dz-denglu1" value="立即登录" />
-														<a href="#">
-																<p class="r DengLu" onclick="bb2()">忘记密码</p>
-														</a>
+                                                        <input name="mobile" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
+                                                        <!-- <div class="dz-hk">
+                                                            <span class="hk-btn">
+                                                                >>
+                                                            </span>
+                                                            <span class="hk-cao nc-lang-cnt"> 
+
+                                                            </span>
+                                                        </div> -->
+                                                        <div class="yanzhnegma">
+                                                            <input name="yanzhengma" type="text" class="dz-ipu dz-ipu-yzm-l" placeholder="请输入验证码" />
+                                                            <input type="text" class="dz-ipu dz-ipu-yzm-r" value="发送验证码">
+                                                        </div>
+                                                        <input name="password" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
+                                                        <div class="nickname">
+                                                            <input type="text" class="dz-ipu nik-l l-changcilb-on">
+                                                            <label for="male"><input id="male" type="radio" name="gender"  value="1">先生</label>
+                                                           <label for="female"><input id="female" type="radio" name="gender"  value="0">女士</label>
+                                                        </div>
+														<input type="submit" class="dz-zhuce" value="注册" />
+														
 												</div>
 										</form>                
 								</div>

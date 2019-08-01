@@ -1,17 +1,17 @@
-/*订单详情页面背景*/
-.ol-order{
+/*详情页面背景*/
+.ol-adress{
     width: 100%;
     min-height:740px;
     overflow: hidden;
     background: #f1f5f8;
 }
-.order-w{
+.adress-w{
     min-height: 740px;
     overflow: hidden;
 
 }
 /*左边列表*/
-.order-l{
+.adress-l{
     width: 256px;
     min-height: 160px;
     padding-bottom: 20px;
@@ -22,21 +22,21 @@
     left: 0;
     top: 0;
 }
-.order-l a:first-child li{
+.adress-l a:first-child li{
 font-size: 14px;
     color: #7e7e7e;
     padding-left: 20px;
     margin-top: 15px;
 
 }
-.order-l .ord-li-title{
+.adress-l .ord-li-title{
     padding-left: 33px;
     height: 38px;
     line-height: 38px;
     border-left: 2px solid #fff;
     position: relative;
 }
-.order-l .ord-li{
+.adress-l .ord-li{
     padding-left: 33px;
     height: 38px;
     line-height: 38px;
@@ -52,7 +52,7 @@ font-size: 14px;
 }
 .ord-li.ord-li-on{
     border-left: 2px solid #ff6633;
-    color: #ff6633;
+    color:#ff6633;
     background: #f1f5f8;
 }
 .ord-li span.o-l-jt{
@@ -98,56 +98,47 @@ font-size: 14px;
 }
 
 /*右边列表*/
-.order-r{
-    width: 880px;
+.adress-r{
+    width: 860px;
     min-height: 800px;
-    padding: 10px;
     background-color: #fff;
+    padding: 20px;
 }
-.wd-order-top{
+.wd-adress-top{
     width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding: 0  0 20px 0;
     border-bottom: 1px solid #eeeeee;
-}
-.wd-order-top ul{
-    height: 50px;
-    list-style: none;
-    
-}
-.wd-order-top ul li{
-    float: left;
-    width: 120px;
-    padding: 5px;
-    color: #000;
-    transition: all 10ms linear;
-}
-.wd-order-top ul li.state-on{
-    
-    border-bottom: 1px solid #FF6633;
 
 }
-.wd-order-top ul li:hover{
-     border-bottom: 1px solid #FF6633;
- }
-.wd-order-top ul li:hover a{
-    color: #FF6633 !important;
+.wd-adress-top span{
+    font-size: 18px;
+    color:#ff6633;
 }
-.wd-order-top ul li a{
-    float: left;
-    width: 100%;
-    height:40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 15px;
-    color: #000;
-    border-right:1px solid #eeeeee;
-}
-.wd-order-top ul li.state-on a{
-    color:  #FF6633;
-}
-.wd-order-content{
+
+
+
+.wd-adress-content{
     min-height: 835px;
-    padding: 0 20px;
+    padding: 10px;
+    
 }
+.wd-adress-content .add-adress {
+    
+width:95%;
+height: 50px;
+line-height: 50px;
+text-align: center;
+
+padding: 10px;
+border: 1px solid #ff6633;
+border-radius: 5px;
+color:#ff6633;
+
+font-size: 16px;
+}
+
 
 
 

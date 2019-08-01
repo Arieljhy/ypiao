@@ -37,25 +37,28 @@
     line-height: 30px;
     margin-bottom: 22px;
 }
-
+.dz-xuanze li{
+    float: left;
+    width: 100%;
+    height: 40px;
+}
 .dz-xuanze li a {
 	float: left;
-	height: 100%;
-    width: 50%;
+	
     border-right: 1px solid #e0e7eb;
     color: #7f8c8d;
 	font-size: 17px;
     display: block; 
 	text-align:center;
-	line-height:100%;
+	line-height:40px;
 }
 .dz-xuanze li a:first-child {
-    padding-left:70px;
-    width:114px;
+    
+    width:182px;
 }
 .dz-xuanze li a:nth-child(2) {
-    padding-left: 66px;
-    width: 110px;
+    
+    width: 182px;
 }
 .dz-xuanze li a:nth-child(2) {
     border-right: 0 none;
@@ -76,25 +79,69 @@
     padding-left: 14px;
     width: 350px;
 }
-.dz-denglu {
+.dz-denglu,.dz-zhuce {
+    width: 366px;
+     height: 40px;
+	text-align:center;
+	line-height:40px;
+
     background-color: #ff6633;
     border: 0 none;
     border-radius: 3px;
+
     color: #fff;
     cursor: pointer;
     font-size: 17px;
-    height: 40px;
-	text-align:center;
-	line-height:40px;
+   
     /* margin-left: 8px; */
-    margin-top: 10px;
-    width: 366px;
+    
+    margin-bottom: 15px;
+    
 }
 
 .DengLu {
     color: #ff6633;
     font-size: 13px;
 }
+/*注册*/
+.yanzhengma{
+    float: left;
+    width: 100%;
+
+}
+.dz-ipu.dz-ipu-yzm-l{
+    width:220px;
+    border-right: none;
+    float: left;
+    
+
+}
+.dz-ipu.dz-ipu-yzm-r{
+    width:125px;
+    float: left;
+    padding: 0;
+    cursor:pointer;
+    text-align: center;
+    color:#ff6633;
+    font-size:16px;
+
+}
+
+.nickname{
+    width:100%;
+    float:left;
+    font-size: 18px;
+}
+.dz-ipu.nik-l{
+    width:217px;
+}
+.nickname label{
+
+    width:50px;
+    height:42px;
+    margin-right: 15px;
+}
+
 
 
 
