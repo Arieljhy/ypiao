@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>演唱会</title>
+    <title>立即支付</title>
+    <script src="../js/staticjs/jquery-1.7.min.js"></script>
+
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/qbyc.css">
-    <link rel="stylesheet" href="../css/r-model.css">
+    <link rel="stylesheet" href="../css/order.css">
     <link rel="stylesheet" href="../css/footer.css">
+
 </head>
-<body>
+<body style="background: #fff;">
 <header class="hed">
     <div class="hed w">
         <div class="hed-log" ><a href="../index.html"><i class="hedlog ico" ></i ></a></div>
         <div class="l hed-cshi">
-            <a href="#" style="width: 70px">全国<span class="r hed-sj ico"></span></a>
+            <a href="#">全国<span class="r hed-sj ico"></span></a>
             <!-- 城市列表-->
             <ul class="chengshi" >
                     <li><a href="/bj/">北京</a ></li>
@@ -149,7 +151,6 @@
                 </li>
             </ul>
 
-
         <div class="r hed-su" onkeydown="keyLogin3(event)">
             <form id="key-search" method="get" action="">
                 <input type="text" placeholder="请输入演出、艺人、场馆名称" class="l su-ipt">
@@ -168,307 +169,130 @@
 
     </div>
 </header>
-<div class="older-jc w">
-    <a href="/">首页</a>
-    >
-    <a href="yanchanghui.html">演唱会</a>
-
-</div>
-<div class="all-xmu w">
-    <div class="xmu-l l">
-            <div class="l-leibie ">
-    <ul>
-        <li class="fenlei">
-            分类：
-            <a href="yanchanghui.html" >演唱会</a>
-            <a href="yinyuehui.html">音乐会</a>
-            <a href="huajugeju.html">话剧歌剧</a>
-            <a href="wudaobalei.html" class="leibie-on">舞蹈芭蕾</a>
-            <a href="quyaunzatan.html">曲苑杂坛</a>
-            <a href="tiyusaishi.html">体育赛事</a>
-            <a href="dujiaxiuxian.html">度假休闲</a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            子类
-            <a href="" class="leibie-on">全部</a>
-            <a href="">流行</a>
-            <a href="">摇滚</a>
-            <a href="">民族</a>
-            <a href="">音乐节</a>
-            <a href="">其他</a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            时间：
-            <a href="" class="leibie-on">全部</a>
-            <a href="">今天</a>
-            <a href="">明天</a>
-            <a href="">最近三天</a>
-            <a href="">本周末</a>
-            <a href="">下周末</a>
-            <a href="">最近30天</a>
-
-
-        </li>
-
-    </ul>
-
-
-</div>
-            <div class="l-jieguo ">
-                 <ul class="jieguo-top">
-        <li class="l jg-top-l">
-            排序：
-            <a href="" class="leibie-on">默认</a>
-            <a href="">按热门</a>
-            <a href="">按时间</a>
-        </li>
-        <li class="r jg-top-r">
-            共
-            <span class="jieguo-num">275</span>
-            个项目
-        </li>
-    </ul>
-                <div class="xm-jiazai" style="display: none">
-        <img src="" alt="">
-        <p>正在加载信息，请稍后。。。</p>
+<div class="ord-ljzf-jc w">
+    <div class="order-zhifu w">
+        <img src="../img/order/zhifu.png" alt="">
     </div>
-                <ul class="jieguo-jieguo">
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">¥399起</span>
-                <a href="/t_61246/" class="blc" target="_blank">立即购买</a>
-            </div>
+</div>
 
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                 <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-                <div class="jieguo-xm">
-            <a href="">
-                <img class="l cc-haibao" src="../img/qbyc/ych/xm1.jpg" alt="">
-            </a>
-            <div class="l xm-l">
-                <a class="cc-title" href="/t/">
-                    哇咔宇宙超级音乐节-秦皇岛站
-                </a>
-                <span class="blc cc-time">
-                    2019.08.24-08.25
-                </span>
-                <span class="blc cc-changguan">【秦皇岛】渔岛海洋温泉度假区
-                </span>
-            </div>
-            <div class="r xm-r">
-                <span class="r-dz"></span>
-                <span class="cc-price">补票中</span>
-            </div>
-
-        </div>
-            </ul>
-            </div>
+<div class="zhifu-time w">
+    <div class="zf-outtime">
+        订单超时
     </div>
-    <div class="xmu-r r">
-        <!--我要卖票-->
-        <div class="r-maipiao">
-            <p>有多的票，立即变现</p>
-            <a href="#">
-                <button class="ico">我要卖票</button>
-            </a>
+</div>
+<div class="zhifu-info w">
+    <div class="zf-detial">
+        <p class="zf-d-id">订单编号：<span>2019080250999952</span></p>
+        <p class="zf-d-shxx">收货信息：<span>冀女士</span> <span>18266647973</span> </p>
+        <p class="zf-d-shdz">收货地址：<span>凯迪拉克中心</span></p>
+        <p class="zf-d-spqd">商品清单：<span>2019爱奇艺尖叫之夜演唱会—北京站 -2019-08-04 19:00:00 ￥580.00 x 1</span></p>
+    </div>
+</div>
+
+ <div class="zhifu-yhq  w"> 
+    <div class="zf-yhq-top ppqd-tit ">
+    优惠券
+    </div>
+
+    <div class="zf-yhq-c">
+        <div class="zf-yhq-c-l l ">
+            <img class="l ico" src="" alt="">
+            <div class="l">
+                <p class="quan-no-tit">没有可用的优惠券，激活新优惠券</p>
+                <input class="get-yhq-yhm" type="text" placeholder="请输入优惠码">
+                <input class="get-yhq-dh" type="text" value="兑换" readonly="readonly" unselectable="on">
+            </div>
         </div>
 
-        <div class="r-remen">
-            <div class="zuijin-top">热门推荐</div>
-            <ul class="remen-liebiao">
-                <li class="liebiao-da">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <span class="xiangmu-xinxi">
-                        <a href="/t_74322/" class="cc-title" target="_blank">遇见莫扎特-趣味探秘《拆钢琴》世界名曲动漫视听欢乐互动音乐会</a>
-                        <p class="cc-time">2019.08.03 19:30</p>
-                        <p class="cc-changguan">津湾大剧院</p>
-                        <p >¥
-                            <span class="cc-price">108</span>起
-                        </p>
+        <div class="zf-yhq-c-r r">
+            <div class="quan ico quan-nav">
+                <div class="quan-tit">新用户专享券</div>
+                <div>
+                    <div class="quan-prive l">¥<span>10.00</span></div>
+                    <div class="quan-tishi r">
+                        满200.00元使用<br>
+                        有效期至:<span>2019-08-23</span>
+                    </div>
+                </div>
 
-                    </span>
-
-                </li>
-                <li class="liebiao-da">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <span class="xiangmu-xinxi">
-                        <a href="/t_74322/" class="cc-title" target="_blank">遇见莫扎特-趣味探秘《拆钢琴》世界名曲动漫视听欢乐互动音乐会</a>
-                        <p class="cc-time">2019.08.03 19:30</p>
-                        <p class="cc-changguan">津湾大剧院</p>
-                        <p >¥
-                            <span class="cc-price">108</span>起
-                        </p>
-
-                    </span>
-
-                </li>
-                <li class="liebiao-da">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <span class="xiangmu-xinxi">
-                        <a href="/t_74322/" class="cc-title" target="_blank">遇见莫扎特-趣味探秘《拆钢琴》世界名曲动漫视听欢乐互动音乐会</a>
-                        <p class="cc-time">2019.08.03 19:30</p>
-                        <p class="cc-changguan">津湾大剧院</p>
-                        <p >¥
-                            <span class="cc-price">108</span>起
-                        </p>
-
-                    </span>
-
-                </li>
-
-                <li class="liebiao-xiao"></li>
-                <li></li>
-            </ul>
-
+            </div>
+            <div class="quan-no-use">
+                <input class="quan-no-use-btn" type="text" value="不使用优惠券">
+            </div>
 
         </div>
 
     </div>
+
 </div>
 
+<div class="zhifu-zffs w">
+        <div class="zf-zffs-top ppqd-tit ">
+                支付方式
+         </div>
+         <div class="zf-zffs-xz">
+             <input type="radio" id="zffs-wx"/>
+                    <label for="zffs-wx"><span class="ico zf-wx"></span></label>
+             
+            <input type="radio" id="zffs-zfb" />
+                    <label for="zffs-zfb"><span class="ico  zf-zfb"></span></label>
+         </div>
+         <div class="zf-bottom-tj ppqd-tit  ">
+                <input class="zf-tj-btn r" type="text" name="" id="" value="立即支付">
+                        
+                <div class="zf-tj-price r">
+                  <p>
+                    应付总金额：¥
+                     <span class="zf-price">580</span>
+                    </p>
+                    <p class="fj-price">
+                        快递费:+¥
+                        <span>0</span>
+                        服务费:+¥ 
+                        <span>29</span>
+                    </p>
+
+               </div>
+                          
+         </div>
+         
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--底部  -->
 <div class="recommendation w">
     <ul>
         <li class="title">热门推荐：</li>
@@ -576,12 +400,9 @@
 
     </div>
 </div>
-<!--底部  -->
 <footer>
 		<span class="fot-a">北京有票科技有限公司 Copyright © 2015 - 2018 All rights reserved.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;京ICP备15041183号-1&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;ICP证 京B2-20180265&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;客服热线:400-080-9208
-
 		</span>
-
     <div class="footer_boml">
         <a href="#" target="_blank" style="text-decoration:none; display:block; height:20px; line-height:20px;">
             <img src="../img/login/beian.png" style="float:left; margin-left:10px;">
@@ -589,11 +410,9 @@
             <img src="../img/login/beian.png" style="float:left; margin-left:10px;">
             <p style=" float:left; height:20px; inline-height:20px; color:#939393;">电子营业照</p>
         </a>
-
     </div>
-
 </footer>
-<script src="../js/staticjs/jquery-1.7.min.js"></script>
+
 <script type="text/javascript">
 
     /*城市列表的隐藏与显示*/
@@ -624,6 +443,10 @@
     },function(){
         $('.xz-xl').hide()
     });
+
+
+    /*点击高亮*/
+  
 </script>
 </body>
 </html>
