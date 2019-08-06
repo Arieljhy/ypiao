@@ -2,7 +2,7 @@ const express = require('express');
 const pool = require('../../pool.js');
 var router = express.Router();
 
-// ceshi
+// 测试接口
 router.get('/text/:uid',(req,res)=>{
     var $uid= req.params.uid;
     console.log($uid);
@@ -16,6 +16,10 @@ router.get('/text/:uid',(req,res)=>{
         }
     });
 });
+
+
+
+
 
 // 登录
 router.post('/login',(req,res)=>{

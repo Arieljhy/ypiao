@@ -26,6 +26,8 @@ $('.ul-xz').hover(function(){
 });
 /*轮播图*/
 var count = 0 ; //定义全局变量count来表示当前图片
+
+
 function run(){
     count++;
     count = count ==3?0:count;
@@ -41,8 +43,12 @@ function reverserun(){
 var timer = setInterval(run,2000); //设置定时器
 $('.banner').hover(function(){ //设置鼠标移入移出事件
     clearInterval(timer);
+    $('.right').fadeIn(200);
+    $('.left').fadeIn(200);
 },function(){
     timer = setInterval(run,2000);
+    $('.right').fadeOut(200);
+    $('.left').fadeOut(200);
 })
 $('.banner ul li').mouseenter(function(){ //设置移入圆点事件
     count = $(this).index();
@@ -60,6 +66,9 @@ $('.banner .left').click(function(){ //设置左键按钮点击事件
 //页面加载
 window.οnlοad=function(){
     $("#lt-menu").fadeOut("fast");
+
+    $('.right').fadeOut("fast");
+    $('.left').fadeOut("fast");
 }
 //滚动条滚动事件
 $(document).scroll(function() {
@@ -73,18 +82,45 @@ $(document).scroll(function() {
             $("#lt-menu").fadeOut("slow");//隐藏
          
     }
-
     });
 
-  
+ //楼梯导航滚动效果
+ 
+ /* 滚动监听 */
+      // 定义一个获取所有模块的距离高度
+      var arrOffsetTop = [
+        $('#louti3').offset().top,
+        $('#louti4').offset().top,
+        $('#louti5').offset().top,
+        $('#louti6').offset().top,
+        $('#louti7').offset().top,
+        $('#louti8').offset().top    
+     ];
+
+     // 获取每个div的平均高度
+     var fTotalHgt = 0;
+     for(var i=0; i<$('div').length; i++) {
+        fTotalHgt += $('div').eq(i).outerHeight();
+     }
+     var fAverageHgt = parseFloat(fTotalHgt / $('div').length);
+
+     // 滚动事件(每次滚动都做一次循环判断)
+     $(window).scroll(function() {
+        for(var i=0; i<$('div').length; i++) {
+           if($(this).scrollTop() > arrOffsetTop[i] - fAverageHgt) {  // 减去一个固定值，是定位准确点
+              $('ul li').eq(i).addClass('active').siblings().removeClass('active');
+           }
+        }
+     });
+
+  /* 点击事件 */
+     $('ul li').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('body, html').animate({scrollTop: arrOffsetTop[$(this).index()]}, 500);
+     });
     
 
 
-
-//橙色弹出效果
-
-
-//距离顶部的距离
 
 
 

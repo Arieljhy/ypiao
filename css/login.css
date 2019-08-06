@@ -1,12 +1,17 @@
 
 /* 背景 */
+.Bg{
+    width: 100%;
+    background-color: #0c1031;
+    margin-top:75px;
 
+}
 .Bg-w{
-    height: 599px;
+    height: 610px;
     background-image: url(../img/login/bg.png);
     background-repeat: no-repeat;
-    background-size: 100% 599px;
-	min-width:1500px;
+    background-size: 100% 100%;
+	min-width:1200px;
     position: relative;
 }
 .dengluzhuce .dengluzhuce1{
@@ -131,15 +136,32 @@
     width:100%;
     float:left;
     font-size: 18px;
+    position: relative;
 }
 .dz-ipu.nik-l{
     width:217px;
 }
-.nickname label{
+div.nickname input:nth-child(2){
+    display: none;
+}
+#female{
+    display: none;
+}
+div.nickname label{
+    position: relative;  
+    margin-right: 5px; 
+}
+div.nickname label::before{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(219, 219, 219);
+}
 
-    width:50px;
-    height:42px;
-    margin-right: 15px;
+div.nickname input:checked+label::before{
+    background-color: #ff6633;
 }
 
 

@@ -40,29 +40,28 @@
 }
 .banner .button{
     width: 50px;
-    height: 50px;
+    height: 70px;
     text-align: center;
     line-height: 50px;
-    border-radius: 50%;
-    background-color:rgba(0,0,0,0.3);
+    background-repeat: no-repeat;
+   
+   
     cursor: pointer;
 }
 .banner .right{
     position: absolute;
+    background-position: 0 -268px;
+    
     right: 10px;
     top: 45%;
 }
 .banner .left{
     position: absolute;
+    background-position: 0 -200px;
     left: 10px;
     top: 45%;
 }
-.banner .button span{
-    font-size: xx-large;
-    font-weight: 700;
-    line-height: 50px;
-    color: rgba(255,255,255,0.5);
-}
+
 
 /*louti*/
 #lt-menu{
@@ -90,6 +89,7 @@
     margin-bottom: 1px;
     border-bottom: 1px solid #d0d3d5;
 }
+
 
 .radiu li i{
     display: block;
@@ -156,8 +156,12 @@
 .radiu li:hover a i{
     display:none;
 }
- 
-
+.radiu li.active a span{
+    display:block;
+  }
+.radiu li.active a i{
+      display:none;
+}
 .radiu li:last-child{
     border: none;
 }

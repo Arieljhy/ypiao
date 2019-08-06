@@ -333,6 +333,8 @@ ul.ppqd-tit li:first-child{
     
     border:none;
     z-index: 100px;
+
+    cursor: pointer;
 }
 /* cashier */
 .zhifu-time {
@@ -528,6 +530,7 @@ ul.ppqd-tit li:first-child{
     
     border:none;
     z-index: 100px;
+    cursor: pointer;
 
 
 }
