@@ -53,7 +53,7 @@
 
 }
 .ico {
-    background-image: url(../img/login/jl.png);
+    background-image: url(/login/jl.png);
 }
 .footer_bomr span:first-child {
     width: 84px;

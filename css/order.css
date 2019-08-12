@@ -150,6 +150,7 @@ font-size: 14px;
 }
 
 
+
 /*订单提交状态   立即支付*/
 
 .ord-idty-jc,.ord-ljzf-jc{ 
@@ -173,15 +174,18 @@ font-size: 14px;
     background-size: 100%;
     margin:35px 0;
 }
+/*票品清单*/
 .piaopinqingdan{
     width: 100%;
     min-height: 170px;
     background:#fff;
     
     margin-bottom: 5px;
-
+}
+.piaopinqingdan.shopcart{
+     min-height: 600px;
     
-
+    margin-top: 100px;
 }
 .ppqd-tit{
     height: 50px;
@@ -201,10 +205,6 @@ font-size: 14px;
 
     border-radius: 3px;
     background: #f9f9f9;
-
-   
-
-
 }
 ul.ppqd-tit li{
     font-size: 12px;
@@ -225,7 +225,14 @@ ul.ppqd-tit li:first-child{
     height: 120px;
     line-height: 120px;
     list-style: none;
+    
     margin-bottom: 50px;
+    
+}
+.ppqd-in.shopcart{
+    
+    padding:0 10px 20px 10px;
+    border-bottom: 1px dotted #666;
 }
 .ppqd-in .ppxm{
     width:450px;
@@ -252,10 +259,6 @@ ul.ppqd-tit li:first-child{
     height:45px;
     font-size: 16px;
     padding: 0;
-
-    
-
-
 }
 .ppqd-in .ppxm .ppxm-info .ppxm-info-cg{
     
@@ -269,10 +272,7 @@ ul.ppqd-tit li:first-child{
     
     height:21px;
     font-size: 12px;
-    padding: 0;
-
-    
-    
+    padding: 0;  
 }
 
 .ppqd-in li{
@@ -540,6 +540,7 @@ ul.ppqd-tit li:first-child{
     padding: 0;
 }
 
+/*购物车小图标*/
 
 
 

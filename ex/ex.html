@@ -99,9 +99,48 @@
            var b=5;
            [a,b]=[b,a];
            console.log(a,b);
-           //将个别成员提取出来使用
-           var {}={}
+           a=[b,b=a][0];
+           console.log(a,b);
+           a+=b;b=a-b;a-=b;
+           console.log(a,b);
+           a^=b;b^=a;a^=b;
+           console.log(a,b);
+           /////////////////////////////////////////////////////
+           //击落一架敌机
+           class Enemy{
+               constructor(x,y){
+                   this.x=x;
+                   this.y=y;
+               }
+               fly(){
+                   console.log("fly");
+               }
+           }
+           class San extends Enemy{
+               constructor(x,y,award){
+                   super(x,y)
+                   this.award=award;
+               }
+               getaward(){}
+           }
+           class Plane extends Enemy{
+               constructor(x,y,score){
+                   super(x,y)
+                   this.score=score;
+               }
+           }
+           var san=new San(1,1,1);
+           var plane=new Plane(2,2,2);
+           console.log(san.x,san.y)
+           console.log(plane.x,plane.y)
+           san.fly();
+           plane.fly();
+
            
+           ////////////////////////////////////////////////////
+           //es6 防止回调地狱
+
+
             
         
         

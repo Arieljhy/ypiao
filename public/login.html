@@ -1,18 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-     <script src="../js/staticjs/jquery-1.7.min.js"></script>
+     
+     
      <title>会员登录-有票网</title>
-     <link rel="stylesheet" href="../css/common.css">
-     <link rel="stylesheet" href="../css/header.css">
-	 <link rel="stylesheet" href="../css/login.css">
-     <link rel="stylesheet" href="../css/footer.css">
+     <link rel="stylesheet" href="/common.css">
+     <link rel="stylesheet" href="/header.css">
+	 <link rel="stylesheet" href="/login.css">
+     <link rel="stylesheet" href="/footer.css">
  </head>
  <body>
  <header class="hed">
 	<div class="hed w">
-        <div class="hed-log" ><a href="../index.html"><i class="hedlog ico" ></i ></a></div>
+        <div class="hed-log" ><a href="/index.html"><i class="hedlog ico" ></i ></a></div>
         <div class="l hed-cshi">
             <a href="#" class="xl-xs-l">全国<span class="r hed-sj ico"></span></a>
             <!-- 城市列表-->
@@ -87,7 +88,7 @@
         </div>
         <!-- 全部演出-->
         <ul class="l hed-ul">
-                <li><a href="../index.html" class="older older-on">首页</a></li>
+                <li><a href="/index.html" class="older older-on">首页</a></li>
                 <li class="mar-r dh-fl" >
                     <a href="yanchanghui.html" class="older xl-xs-l" >全部演出<span class="r hed-sj ico"></span></a>
     
@@ -178,22 +179,21 @@
                     <ul class="dz-xuanze">
                         <li>
                             <a href="javascript:;" class="a-on">登录</a >
-                            <a href="register.html">注册</a >
+                            <a href="/register.html">注册</a >
                         </li>
                     </ul>
-										<form id="login" action="#" method="post">
-												<input type="hidden" name="_csrf" value=" ">
-												<div class="dz-input input-denglu">
-														<div class="tanchuang-tishi"></div>
-														<input name="mobile" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
-														<input name="password" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
-														<input type="submit" class="dz-denglu dz-denglu1" value="立即登录" />
-														<a href="#">
-																<p class="r DengLu" onclick="bb2()">忘记密码</p>
-														</a>
-												</div>
-										</form>                
-								</div>
+					<form>
+						<div class="dz-input input-denglu">
+                            <div class="tanchuang-tishi"></div>
+                            <input name="phone" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
+                            <input name="upwd" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
+                            <input id="login_btn" class="dz-denglu dz-denglu1" value="立即登录" re />
+                            <a href="javascript:;">
+                                <p class="r DengLu" onclick="bb2()">忘记密码</p>
+                            </a>
+					    </div>
+					</form>                
+				</div>
             </div>
         </div>
     </div>
@@ -313,36 +313,38 @@
 		</span>
         <div class="footer_boml">
             <a href="#" target="_blank" style="text-decoration:none; display:block; height:20px; line-height:20px;">
-                <img src="../img/login/beian.png" style="float:left; margin-left:10px;">
+                <img src="/login/beian.png" style="float:left; margin-left:10px;">
                 <p style=" float:left; height:20px; inline-height:20px; color:#939393;">京公网安备号|</p>
-                <img src="../img/login/beian.png" style="float:left; margin-left:10px;">
+                <img src="/login/beian.png" style="float:left; margin-left:10px;">
                 <p style=" float:left; height:20px; inline-height:20px; color:#939393;">电子营业照</p>
             </a>
         </div>
     </footer>
+    <script src="/staticjs/jquery-1.7.min.js"></script>
+    <script src="/log_reg.js"></script>
 
  <script type="text/javascript">
-
+    
      /*城市列表的隐藏与显示*/
      $('.hed-cshi').hover(function(){
          $('.chengshi').show()
      },function(){
          $('.chengshi').hide()
-     });
+     })
 
 
      $('.chenshi').hover(function(){
          $('.chengshi').show()
      },function(){
          $('.chengshi').hide()
-     });
+     })
      /*全部演出*/
 
      $('.dh-fl').hover(function(){
          $('.dh-xl').show()
      },function(){
          $('.dh-xl').hide()
-     });
+     })
 
      /*下载*/
 
@@ -350,7 +352,8 @@
          $('.xz-xl').show()
      },function(){
          $('.xz-xl').hide()
-     });
+     })
+    
  </script>
  </body>
 </html>

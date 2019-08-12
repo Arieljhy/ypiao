@@ -8,7 +8,7 @@
 }
 .Bg-w{
     height: 610px;
-    background-image: url(../img/login/bg.png);
+    background-image: url(/login/bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	min-width:1200px;

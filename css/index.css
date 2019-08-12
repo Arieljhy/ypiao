@@ -97,7 +97,7 @@
     height:30px; 
     margin: 0 auto;
     background: no-repeat;
-    background-image: url(../img/login/jl.png);
+    background-image: url(/login/jl.png);
 }
 .radiu .lt0{
     background-position:-85px -292px;
@@ -183,12 +183,12 @@
     height: 188px;
     background-color: #fff;
     border-radius: 3px;
-    transition:all 250ms linear;
+    transition:all 100ms linear;
 }
 .juhe-x:hover{
     width: 388px;
     height: 188px;
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(-10px);
 }
 .juhe-x img{
     display: block;

@@ -16,30 +16,18 @@ router.get('/text/:uid',(req,res)=>{
         }
     });
 });
-
-
-
-
-
 // 登录
 router.post('/login',(req,res)=>{
-    var $uname= req.body.uname;
-    var $upwd  = req.body.upwd;
-    if(!$uname){
-        res.send("用户名不存在");
-        return;
-    }
-    if(!$upwd){
-        res.send("密码不存在");
-        return;
-    }
-    var sql="select * from yp_user where uname=? and upwd=?";
-    pool.query(sql,[$uname,$upwd],function(err,result){
+    var $phone = req.body.phone;
+    var $upwd = req.body.upwd;
+    console.log(`${$phone}和${$upwd}`);
+    var sql="select * from yp_user where phone=? and upwd=?";
+    pool.query(sql,[$phone,$upwd],function(err,result){
         if(result.length>0){
-            res.send("1");
+            res.send("{message:1}");
         }
         else{
-            res.send("0");
+            res.send("{message:1}");
         }
     });
 });
@@ -76,10 +64,10 @@ router.put('/update_user',(req,res)=>{
     var sql="update yp_user set uname=?,upwd=?,phone=?,email=?,user_name=?,gender=? where uid=?";
     pool.query(sql,[$uname,$upwd,$phone,$email,$user_name,$gender,$uid],(err,result)=>{
         if(result.affectedRows>0){
-            res.send("1");
+            res.send("{message:1}");
         }
         else{
-            res.send("0");
+            res.send("{message:0}");
         }
     });
 });
