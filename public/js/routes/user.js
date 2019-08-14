@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('../../pool.js');
+const pool = require('../../../pool.js');
 var router = express.Router();
 
 // 测试接口
@@ -20,14 +20,16 @@ router.get('/text/:uid',(req,res)=>{
 router.post('/login',(req,res)=>{
     var $phone = req.body.phone;
     var $upwd = req.body.upwd;
-    console.log(`${$phone}和${$upwd}`);
+
     var sql="select * from yp_user where phone=? and upwd=?";
     pool.query(sql,[$phone,$upwd],function(err,result){
+        if (err) throw err;
+       //result 是一个数组[], 里面的元素是 对象{}
         if(result.length>0){
-            res.send("{message:1}");
+            res.send(result[0]);
         }
         else{
-            res.send("{message:1}");
+            res.send("-1");
         }
     });
 });

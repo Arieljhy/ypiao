@@ -5,10 +5,10 @@
      
      
      <title>会员登录-有票网</title>
-     <link rel="stylesheet" href="/common.css">
-     <link rel="stylesheet" href="/header.css">
-	 <link rel="stylesheet" href="/login.css">
-     <link rel="stylesheet" href="/footer.css">
+     <link rel="stylesheet" href="/css/common.css">
+     <link rel="stylesheet" href="/css/header.css">
+	 <link rel="stylesheet" href="/css/login.css">
+     <link rel="stylesheet" href="/css/footer.css">
  </head>
  <body>
  <header class="hed">
@@ -90,45 +90,45 @@
         <ul class="l hed-ul">
                 <li><a href="/index.html" class="older older-on">首页</a></li>
                 <li class="mar-r dh-fl" >
-                    <a href="yanchanghui.html" class="older xl-xs-l" >全部演出<span class="r hed-sj ico"></span></a>
+                    <a href="/yanchanghui.html" class="older xl-xs-l" >全部演出<span class="r hed-sj ico"></span></a>
     
                     <span class="dh-xl xl-xs xl-xs-1"  style="display: none">
-                        <a href="yanchanghui.html" target="_blank">
+                        <a href="/yanchanghui.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-1 ico perform1"></span>
                                 <span class="xl-r">演唱会</span>
                             </span>
     
                         </a>
-                        <a href="yinyuehui.html" target="_blank">
+                        <a href="/yinyuehui.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-2 ico perform1"></span>
                                 <span class="xl-r">音乐会</span>
                             </span>
                         </a>
     
-                        <a href="huajugeju.html" target="_blank">
+                        <a href="/huajugeju.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-3 ico perform1"></span>
                                 <span class="xl-r">话剧歌剧</span>
                             </span>
                         </a>
     
-                        <a href="wudaobalei.html" target="_blank">
+                        <a href="/wudaobalei.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-4 ico perform1"></span>
                                 <span class="xl-r">舞蹈芭蕾</span>
                             </span>
                         </a>
     
-                        <a href="quyaunzatan.html" target="_blank">
+                        <a href="/quyaunzatan.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-5 ico perform1"></span>
                                 <span class="xl-r">曲苑杂坛</span>
                             </span>
                         </a>
     
-                        <a href="dujiaxiuxian.html" target="_blank">
+                        <a href="/dujiaxiuxian.html" target="_blank">
                             <span class="dh-xl-xl">
                                 <span class="xl xl-6 ico perform1"></span>
                                 <span class="xl-r">度假休闲</span>
@@ -137,7 +137,7 @@
                     </span>
     
                 </li>
-                <li><a href="tiyusaishi.html" class="older">体育赛事</a></li>
+                <li><a href="/tiyusaishi.html" class="older">体育赛事</a></li>
                 <li class="ul-xz">
                     <a href="#" class="older xl-xs-l">APP下载<span class="r hed-sj ico"></span></a>
                     <span class="xz-xl">
@@ -160,9 +160,9 @@
 			<div class="wode-dongxi">
 				<ul class="wd-dz">
 							<li class="yhtb ico"></li>
-					<li><a href="login.html">登录</a></li>
+					<li><a href="/login.html">登录</a></li>
 							<li class="wd-dz-bor"></li>
-					<li><a href="register.html">注册</a></li>
+					<li><a href="/register.html">注册</a></li>
 				</ul>
 			</div>
 		</div>
@@ -187,7 +187,9 @@
                             <div class="tanchuang-tishi"></div>
                             <input name="phone" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
                             <input name="upwd" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
-                            <input id="login_btn" class="dz-denglu dz-denglu1" value="立即登录" re />
+                            <input id="login_btn" class="dz-denglu dz-denglu1" value="立即登录" readonly />
+                            <input id="rememberUser" type="checkbox" class="l"><label class="l" for="rememberUser">保存密码</label> 
+                                
                             <a href="javascript:;">
                                 <p class="r DengLu" onclick="bb2()">忘记密码</p>
                             </a>
@@ -313,15 +315,16 @@
 		</span>
         <div class="footer_boml">
             <a href="#" target="_blank" style="text-decoration:none; display:block; height:20px; line-height:20px;">
-                <img src="/login/beian.png" style="float:left; margin-left:10px;">
+                <img src="/img/login/beian.png" style="float:left; margin-left:10px;">
                 <p style=" float:left; height:20px; inline-height:20px; color:#939393;">京公网安备号|</p>
-                <img src="/login/beian.png" style="float:left; margin-left:10px;">
+                <img src="/img/login/beian.png" style="float:left; margin-left:10px;">
                 <p style=" float:left; height:20px; inline-height:20px; color:#939393;">电子营业照</p>
             </a>
         </div>
     </footer>
-    <script src="/staticjs/jquery-1.7.min.js"></script>
-    <script src="/log_reg.js"></script>
+    <script src="/js/staticjs/jquery-1.7.min.js"></script>
+    <script src="/js/log_reg.js"></script>
+    <script src="/js/staticjs/jquery.cookie.js"></script>
 
  <script type="text/javascript">
     
@@ -353,6 +356,7 @@
      },function(){
          $('.xz-xl').hide()
      })
+    
     
  </script>
  </body>

@@ -67,6 +67,9 @@ header{position:fixed;top:0; z-index:999;}
     text-align: center;
 
 }
+.chengshi li:hover a{
+    color: #ff7b33;
+}
 
 .hed-ul{
     float: left;
@@ -294,6 +297,69 @@ header{position:fixed;top:0; z-index:999;}
     padding-left: 16px;
     width: 246px;
     margin:auto 0;
+}
+/*登录之后显示个人中心*/
+.su-wd{
+    height: 50px;
+    line-height:50px; 
+    margin:auto 20px;
+    padding:5px;
+    cursor: pointer;
+    position: relative;
+    
+
+}
+.su-wd:hover .wd-sj{
+    transform: rotate(180deg);
+
+}
+.su-wd:hover .wd-tanchuang2{
+    display: block;
+
+}
+.su-wd img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.su-wd .wd-name{
+    float: left;
+    height:40px;
+    font-size:12px ;
+    margin:0 5px;
+}
+.su-wd .wd-sj{
+    margin: 20px 5px;
+    transition:all 100ms linear;
+}
+.wd-tanchuang2{
+    display: none;
+    width: 100px;
+    height:190px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #d0d3d5;
+    background-color: #fff;
+    font-size:13px;
+    list-style: none;
+
+    padding: 20px;
+
+    position: absolute;
+    top:60px;
+    left:20px;
+    
+}
+.wd-tanchuang2 a{
+    display: block;
+    width: 90px;
+    height:30px;
+    line-height: 30px;
+}
+.wd-tanchuang2 a li{
+    width: 90px;
+    border-bottom:1px solid #e2e5e6;
+    
 }
 
 

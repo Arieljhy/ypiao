@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>有票网北京站-2019北京演唱会,音乐会,话剧,儿童剧,中超足球,CBA篮球等折扣门票交易平台！</title>
-    <script src="/staticjs/jquery-1.7.min.js"></script>
-   
-
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/footer.css">
-
-    <link rel="stylesheet" href="/index.css"/>
-
-    <script src="/staticjs/jquery-1.7.min.js"></script>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css"/>
+    <script src="/js/staticjs/jquery-1.7.min.js"></script>
 </head>
 <body style="background: #e8e8e8">
 <div id="lt-b" style="width:100%; position: relative;">
@@ -171,6 +166,47 @@
                     <li class="wd-dz-bor"></li>
                     <li><a href="/register.html">注册</a></li>
                 </ul>
+                <span class="l su-wd">
+                    <img src="/img/login/girl.png">
+                    <p class="wd-name">冀女士</p>
+                    <span class="r wd-sj hed-sj ico"></span>
+                    <ul class="wd-tanchuang2">              <!-- 登陆后浮窗 -->
+                        <a href="/order_info.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico"></i>
+                                <i class="i-ico">我的订单</i>
+                            </li>
+                        </a>
+                        <a href="/adress.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico"></i>
+                                <i class="i-ico">收货地址</i>
+                            </li>
+                        </a>
+                        <a href="/wd-getticket.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico"></i>
+                                <i class="i-ico">智能抢票</i>
+                            </li>
+                        </a>
+                        <a href="/wd-ypqianbao.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico"></i>
+                                <i class="i-ico">有票钱包</i>
+                            </li>
+                        </a>
+                        <a href="/coupon-list.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico"></i>
+                                <i class="i-ico">我的优惠券</i>
+                            </li>
+                        </a>
+                        <li onclick="logout()">
+                            <i class="iconfont mar10 i-ico"></i>
+                            <i class="i-ico">退出登录</i>
+                        </li>
+                    </ul>
+                </span>
             </div>
         </div>
 
@@ -179,9 +215,9 @@
 
 <!--；轮播图-->
 <div class="banner w" id="ban">
-    <img class="banner-tu" src="/index/lbt1.jpg" alt=""/>
-    <img class="banner-tu" src="/index/lbt2.jpg" alt=""/>
-    <img class="banner-tu" src="/index/lbt3.jpg" alt=""/>
+    <img class="banner-tu" src="/img/index/lbt1.jpg" alt=""/>
+    <img class="banner-tu" src="/img/index/lbt2.jpg" alt=""/>
+    <img class="banner-tu" src="/img/index/lbt3.jpg" alt=""/>
     <ul>
         <li class="li_first"></li>
         <li></li>
@@ -195,17 +231,17 @@
 <div class="juhe w">
     <div class="l juhe-x">
         <a href="#">
-            <img src="/index/jh1.jpg" alt=""/>
+            <img src="/img/index/jh1.jpg" alt=""/>
         </a>
     </div>
     <div class="l juhe-x">
         <a href="#">
-            <img src="/index/jh2.png" alt=""/>
+            <img src="/img/index/jh2.png" alt=""/>
         </a>
     </div>
     <div class="l juhe-x">
         <a href="#">
-            <img src="/index/jh3.jpg" alt=""/>
+            <img src="/img/index/jh3.jpg" alt=""/>
         </a>
     </div>
 </div>
@@ -232,7 +268,7 @@
     <div class="qs-t">
         <i class="t-ico2 l"></i>
         <div class="l t-tit">折扣票</div>
-        <a class="r t-gd" href="#">
+        <a class="r t-gd" href="/zkp.html" target="_blank">
             更多
             <i class="iconfont">></i>
         </a>
@@ -243,7 +279,7 @@
                             <span class="cc-tubiao ico"></span>
                             <span class="haibao">
                                 <a href="">
-                                <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                 </a>
                             </span>
 
@@ -266,7 +302,7 @@
                     <span class="cc-tubiao ico"></span>
                         <span class="haibao">
                             <a href="">
-                                <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                             </a>
                         </span>
                         <ul class="ico haibao-xx">
@@ -288,7 +324,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -310,7 +346,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -332,7 +368,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -358,7 +394,7 @@
             <div class="qs-t">
                 <i class="t-ico2 l" style="color: #ff7670 !important;"></i>
                 <div class="l t-tit">演唱会</div>
-                <a class="r t-gd" href="#">
+                <a class="r t-gd" href="/yanchanghui.html" target="_blank">
                     更多
                     <i class="iconfont">></i>
                 </a>
@@ -369,7 +405,7 @@
                             <span class="cc-tubiao ico"></span>
                             <span class="haibao">
                                 <a href="">
-                                <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                 </a>
                             </span>
 
@@ -392,7 +428,7 @@
                     <span class="cc-tubiao ico"></span>
                         <span class="haibao">
                             <a href="">
-                                <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                             </a>
                         </span>
                         <ul class="ico haibao-xx">
@@ -414,7 +450,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -436,7 +472,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -458,7 +494,7 @@
                     <span class="cc-tubiao ico"></span>
             <span class="haibao">
                 <a href="">
-                    <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                    <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                 </a>
             </span>
                     <ul class="ico haibao-xx">
@@ -506,49 +542,49 @@
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx1.jpg" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx1.jpg" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx2.png" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx2.png" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx3.png" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx3.png" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx4.jpg" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx4.jpg" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx5.png" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx5.png" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx6.jpg" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx6.jpg" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx7.png" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx7.png" alt=""/>
                             </a>
                         </li>
                         <li class="yr-tx cc-name">
                             "林俊杰"
                             <a href="">
-                                <img class="tx-tx" src="/index/yrtx8.png" alt=""/>
+                                <img class="tx-tx" src="/img/index/yrtx8.png" alt=""/>
                             </a>
                         </li>
                     </ul>
@@ -566,7 +602,7 @@
             <div class="qs-t">
                 <i class="t-ico2 l"></i>
                 <div class="l t-tit">体育赛事</div>
-                <a class="r t-gd" href="#">
+                <a class="r t-gd" href="/tiyusaishi.html" target="_blank">
                     更多
                     <i class="iconfont">></i>
                 </a>
@@ -577,7 +613,7 @@
                                     <span class="cc-tubiao ico"></span>
                                     <span class="haibao">
                                         <a href="">
-                                        <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                         </a>
                                     </span>
         
@@ -600,7 +636,7 @@
                             <span class="cc-tubiao ico"></span>
                                 <span class="haibao">
                                     <a href="">
-                                        <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                                     </a>
                                 </span>
                                 <ul class="ico haibao-xx">
@@ -622,7 +658,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -644,7 +680,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -666,7 +702,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -692,7 +728,7 @@
             <div class="qs-t">
                 <i class="t-ico2 l"></i>
                 <div class="l t-tit">话剧歌剧</div>
-                <a class="r t-gd" href="#">
+                <a class="r t-gd" href="/huajugeju.html" target="_blank">
                     更多
                     <i class="iconfont">></i>
                 </a>
@@ -703,7 +739,7 @@
                                     <span class="cc-tubiao ico"></span>
                                     <span class="haibao">
                                         <a href="">
-                                        <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                         </a>
                                     </span>
         
@@ -726,7 +762,7 @@
                             <span class="cc-tubiao ico"></span>
                                 <span class="haibao">
                                     <a href="">
-                                        <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                                     </a>
                                 </span>
                                 <ul class="ico haibao-xx">
@@ -748,7 +784,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -770,7 +806,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -792,7 +828,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -819,7 +855,7 @@
             <div class="qs-t">
                 <i class="t-ico2 l"></i>
                 <div class="l t-tit">音乐会</div>
-                <a class="r t-gd" href="#">
+                <a class="r t-gd" href="/yinyuehui.html" target="_blank">
                     更多
                     <i class="iconfont">></i>
                 </a>
@@ -830,7 +866,7 @@
                                     <span class="cc-tubiao ico"></span>
                                     <span class="haibao">
                                         <a href="">
-                                        <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                         </a>
                                     </span>
         
@@ -853,7 +889,7 @@
                             <span class="cc-tubiao ico"></span>
                                 <span class="haibao">
                                     <a href="">
-                                        <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                                     </a>
                                 </span>
                                 <ul class="ico haibao-xx">
@@ -875,7 +911,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -897,7 +933,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -919,7 +955,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -945,7 +981,7 @@
             <div class="qs-t">
                 <i class="t-ico2 l"></i>
                 <div class="l t-tit">曲苑杂坛</div>
-                <a class="r t-gd" href="#">
+                <a class="r t-gd" href="/quyaunzatan.html" target="_blank">
                     更多
                     <i class="iconfont">></i>
                 </a>
@@ -956,7 +992,7 @@
                                     <span class="cc-tubiao ico"></span>
                                     <span class="haibao">
                                         <a href="">
-                                        <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                                         </a>
                                     </span>
         
@@ -979,7 +1015,7 @@
                             <span class="cc-tubiao ico"></span>
                                 <span class="haibao">
                                     <a href="">
-                                        <img src="/index/zkp2.jpg" alt="" class="haibao-img"/>
+                                        <img src="/img/index/zkp2.jpg" alt="" class="haibao-img"/>
                                     </a>
                                 </span>
                                 <ul class="ico haibao-xx">
@@ -1001,7 +1037,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp3.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp3.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -1023,7 +1059,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp4.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp4.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -1045,7 +1081,7 @@
                             <span class="cc-tubiao ico"></span>
                     <span class="haibao">
                         <a href="">
-                            <img src="/index/zkp1.jpg" alt="" class="haibao-img"/>
+                            <img src="/img/index/zkp1.jpg" alt="" class="haibao-img"/>
                         </a>
                     </span>
                             <ul class="ico haibao-xx">
@@ -1077,31 +1113,39 @@
         <li><a href="#" title="刘德华演唱会门票">刘德华演唱会门票</a></li>
         <li><a href="#" title="林俊杰演唱会门票">林俊杰演唱会门票</a></li>
         <li><a href="#" title="周杰伦演唱会门票">周杰伦演唱会门票</a></li>
-        <li><a href="#" title="张云雷·杨九郎相声门票">张云雷·杨九郎相声门票</a></li>
-        <li><a href="#" title="TFBOYS演唱会门票">TFBOYS演唱会门票</a></li>
-        <li><a href="#" title="张杰演唱会门票">张杰演唱会门票</a></li>
-        <li><a href="#" title="张艺兴演唱会门票">张艺兴演唱会门票</a></li>
-        <li><a href="#" title="郑秀文演唱会门票">郑秀文演唱会门票</a></li>
-        <li><a href="#" title="许嵩演唱会门票">许嵩演唱会门票</a></li>
-        <li><a href="#" title="林宥嘉演唱会门票">林宥嘉演唱会门票</a></li>
         <li><a href="#" title="华晨宇演唱会门票">华晨宇演唱会门票</a></li>
-        <li><a href="#" title="谭咏麟演唱会门票">谭咏麟演唱会门票</a></li>
-        <li><a href="#" title="李宗盛演唱会门票">李宗盛演唱会门票</a></li>
         <li><a href="#" title="容祖儿演唱会门票">容祖儿演唱会门票</a></li>
         <li><a href="#" title="李荣浩演唱会门票">李荣浩演唱会门票</a></li>
+        <li><a href="#" title="杨千嬅演唱会门票">杨千嬅演唱会门票</a></li>
+        <li><a href="#" title="林宥嘉演唱会门票">林宥嘉演唱会门票</a></li>
+        <li><a href="#" title="李宗盛演唱会门票">李宗盛演唱会门票</a></li>
+
+        <li><a href="#" title="TFBOYS演唱会门票">TFBOYS演唱会门票</a></li>
+        <li><a href="#" title="张杰演唱会门票">张杰演唱会门票</a></li>
+        <li><a href="#" title="张信哲演唱会门票">薛之谦演唱会门票</a></li>
+        <li><a href="#" title="莫文蔚演唱会门票">莫文蔚演唱会门票</a></li>
+
+        <li><a href="#" title="张艺兴演唱会门票">张信哲演唱会门票</a></li>
+        <li><a href="#" title="郑秀文演唱会门票">郑秀文演唱会门票</a></li>
+        <li><a href="#" title="许嵩演唱会门票">许嵩演唱会门票</a></li>
+        
+        <li><a href="#" title="谭咏麟演唱会门票">谭咏麟演唱会门票</a></li>
+        
+        
         <li><a href="#" title="孟鹤堂演唱会门票">孟鹤堂演唱会门票</a></li>
+        <li><a href="#" title="张云雷·杨九郎相声门票">张云雷·杨九郎相声门票</a></li>
         <li><a href="#" title="郭德纲演唱会门票">郭德纲演唱会门票</a></li>
         <li><a href="#" title="曹云金相声门票">曹云金相声门票</a></li>
         <li><a href="#" title="汪苏泷演唱会门票">汪苏泷演唱会门票</a></li>
         <li><a href="#" title="任贤齐演唱会门票">任贤齐演唱会门票</a></li>
-        <li><a href="#" title="杨千嬅演唱会门票">杨千嬅演唱会门票</a></li>
-        <li><a href="#" title="莫文蔚演唱会门票">莫文蔚演唱会门票</a></li>
-        <li><a href="#" title="田馥甄演唱会门票">田馥甄演唱会门票</a></li>
+        
+        
+        
         <li><a href="#" title="乐卓爱展会门票">乐卓爱展会门票</a></li>
         <li><a href="#" title="SHAWN MENDES演唱会门票">SHAWN MENDES演唱会门票</a></li>
-        <li><a href="#" title="孙莉演唱会门票">孙莉演唱会门票</a></li>
-        <li><a href="#" title="许巍演唱会门票">许巍演唱会门票</a></li>
-        <li><a href="#" title="张信哲演唱会门票">张信哲演唱会门票</a></li>
+        
+        
+        
     </ul>
 
 </div>
@@ -1189,15 +1233,19 @@
 
     <div class="footer_boml">
         <a href="#" target="_blank" style="text-decoration:none; display:block; height:20px; line-height:20px;">
-            <img src="/login/beian.png" style="float:left; margin-left:10px;">
+            <img src="/img/login/beian.png" style="float:left; margin-left:10px;">
             <p style=" float:left; height:20px; inline-height:20px; color:#939393;">京公网安备号|</p>
-            <img src="/login/beian.png" style="float:left; margin-left:10px;">
+            <img src="/img/login/beian.png" style="float:left; margin-left:10px;">
             <p style=" float:left; height:20px; inline-height:20px; color:#939393;">电子营业照</p>
         </a>
 
     </div>
 
 </footer>
-<script src="/index.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/index.js"></script>
+
+
+
 </body>
 </html>

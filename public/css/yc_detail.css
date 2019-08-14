@@ -21,7 +21,7 @@
     height: 296px;
     min-width: 1300px;
     margin-bottom: 20px;
-    background-image: url("../img/detail/xiangqing-bg.jpg");
+    background-image: url(/img/detail/xiangqing-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -8,7 +8,7 @@
 }
 .Bg-w{
     height: 610px;
-    background-image: url(/login/bg.png);
+    background-image: url(/img/login/bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	min-width:1200px;
@@ -102,6 +102,30 @@
     
     margin-bottom: 15px;
     
+}
+#rememberUser{
+    display: none;
+}
+#rememberUser+label{
+    height: 16px;
+    line-height:16px;
+    font-size:13px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+
+}
+#rememberUser+label::before{
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border: 2px solid rgb(219, 219, 219);
+    background-color: #fff;
+    margin-right:5px;    
+}
+#rememberUser:checked+label::before{
+    background-color: #ff6633;
 }
 
 .DengLu {
