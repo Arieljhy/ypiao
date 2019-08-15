@@ -1,4 +1,57 @@
+/*侧边小图标*/
+.gwc-fix{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgba(0,0,0,.2);
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom:120px;
+    z-index: 999; 
+}
+.gwc-fix a{
+    color: #fff;
+}
+.gwc-fix i.iconfont{
+    
+    font-size: 25px;
+}
+.gwc-fix span.gwc-numb{
+    position: absolute;
+    top:-3px;
+    right: -3px;
 
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    
+    border-radius: 50%;
+    background-color:#ff6633;
+    
+}
+.kf-fix{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgba(243, 114, 29, 0.2);
+    position: fixed;
+    right: 40px;
+    bottom:63px; 
+    z-index: 999;
+}
+.kf-fix a{
+    color: #fff;
+}
+.kf-fix i.iconfont{
+    
+    font-size: 25px;
+}
 /* �Ƽ� */
 
 

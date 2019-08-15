@@ -36,6 +36,27 @@ body{
     position:relative;
     width: 1200px !important;
 }
+/*iconfont*/
+
+@font-face {
+    font-family: 'iconfont';  /* project id 1352350 */
+    src: url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.eot');
+    src: url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1352350_fzlbnenzwoo.svg#iconfont') format('svg');
+  }
+  
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+
 
 
 

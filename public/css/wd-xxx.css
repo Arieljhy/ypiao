@@ -117,6 +117,7 @@ font-size: 14px;
     position: absolute;
     top:50px;
     left:310px;
+    user-select: none;
     
 }
 .wd-xxx-r-content .p-tishi1{

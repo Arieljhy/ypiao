@@ -1,10 +1,9 @@
 $(function(){
-  //在页面初始化时验证是否记住了用户名和密码
-  if($.cookie("rememberUser") == "true") { //"rememberUser"是记住密码选择框的id名
-		$("#rememberUser").attr("checked", true); 
-		$("#phone").val($.cookie("phone"));
-		$("#upwd").val($.cookie("upwd"));
-	} 
+  
+   // 登录时，如果记录的有数据就直接填充
+ 
+   $("#phone").value=window.sessionStorage.getItem('phone');
+   $("#upwd").value=window.sessionStorage.getItem('upwd');
   //判断是否敲击了Enter键 
 $(document).keyup(function(event){ 
   if(event.keyCode ==13){ 
@@ -34,16 +33,17 @@ $(document).keyup(function(event){
     data:param,
     success: function(data){
     //接受返回的数据，前端判断采取的动作
-    console.log(data);
-
       if(data){
         if(data==="-1"){
           alert('密码错误，请重新输入');
           window.location.href="/login.html"; 
-        }else{
+        }else{   
+          //https://www.cnblogs.com/chris-oil/p/9461760.html 
+          let str=JSON.stringify(data); 
+          window.sessionStorage.userInfo=str;
           
           alert('登陆成功');
-          window.location.href="/index.html?uid="+data.uid;    
+          window.location.href="/index.html";    
         }
       }
     }  

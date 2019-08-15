@@ -120,12 +120,17 @@
     content: "";
     width: 11px;
     height: 11px;
+
+    line-height: 11px;
+    text-align: center;
     border: 2px solid rgb(219, 219, 219);
     background-color: #fff;
     margin-right:5px;    
 }
 #rememberUser:checked+label::before{
-    background-color: #ff6633;
+    content:url(/img/login/dxk.png);
+    border: none;
+    
 }
 
 .DengLu {
@@ -178,14 +183,20 @@ div.nickname label{
 div.nickname label::before{
     display: inline-block;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
+    line-height: 11px;
+    text-align: center;
     border-radius: 50%;
-    border: 2px solid rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
+    margin-right: 5px;
+    
 }
 
 div.nickname input:checked+label::before{
-    background-color: #ff6633;
+    content: url(/img/login/xz.png);
+    /* background-color: #ff6633; */
+    border: none;
 }
 
 

@@ -164,6 +164,47 @@
                     <li class="wd-dz-bor"></li>
                     <li><a href="/register.html">注册</a></li>
                 </ul>
+                <span class="l su-wd" style="display: none">
+                    <img class="wd-tx" src="#">
+                    <p class="wd-name"></p>
+                    <span class="r wd-sj hed-sj ico"></span>
+                    <ul class="wd-tanchuang2">              <!-- 登陆后浮窗 -->
+                        <a href="/order_info.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico">&#xe634;</i>
+                                <i class="i-ico">我的订单</i>
+                            </li>
+                        </a>
+                        <a href="/adress.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico">&#xe629;</i>
+                                <i class="i-ico">收货地址</i>
+                            </li>
+                        </a>
+                        <a href="/wd-getticket.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico">&#xe693;</i>
+                                <i class="i-ico">智能抢票</i>
+                            </li>
+                        </a>
+                        <a href="/wd-ypqianbao.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico">&#xe70a;</i>
+                                <i class="i-ico">有票钱包</i>
+                            </li>
+                        </a>
+                        <a href="/coupon-list.html" target="_blank">
+                            <li>
+                                <i class="iconfont mar10 i-ico">&#xe613;</i>
+                                <i class="i-ico">我的优惠券</i>
+                            </li>
+                        </a>
+                        <li class="logout">
+                            <i class="iconfont mar10 i-ico">&#xe60c;</i>
+                            <i class="i-ico">退出登录</i>
+                        </li>
+                    </ul>
+                </span>
             </div>
         </div>
 
@@ -238,8 +279,9 @@
                     <label for="zffs-zfb"><span class="ico  zf-zfb"></span></label>
          </div>
          <div class="zf-bottom-tj ppqd-tit  ">
+             <a href="/order_success.html">
                 <input class="zf-tj-btn r" type="text" name="" id="" value="立即支付" readonly="readonly" unselectable="on">
-                        
+            </a>           
                 <div class="zf-tj-price r">
                   <p>
                     应付总金额：¥
@@ -258,8 +300,17 @@
          
 
 </div>
-
-
+<div class="gwc-fix">
+        <a href="/shopcart.html">
+            <span class="gwc-numb">0</span>
+            <i class="iconfont">&#xe603;</i>
+        </a>
+    </div>
+<div class="kf-fix">
+        <a href="/shopcart.html">
+            <i class="iconfont">&#xe668;</i>
+        </a>
+</div>
 
 
 
@@ -412,41 +463,6 @@
         </a>
     </div>
 </footer>
-
-<script type="text/javascript">
-
-    /*城市列表的隐藏与显示*/
-    $('.hed-cshi').hover(function(){
-        $('.chengshi').show()
-    },function(){
-        $('.chengshi').hide()
-    });
-
-
-    $('.chenshi').hover(function(){
-        $('.chengshi').show()
-    },function(){
-        $('.chengshi').hide()
-    });
-    /*全部演出*/
-
-    $('.dh-fl').hover(function(){
-        $('.dh-xl').show()
-    },function(){
-        $('.dh-xl').hide()
-    });
-
-    /*下载*/
-
-    $('.ul-xz').hover(function(){
-        $('.xz-xl').show()
-    },function(){
-        $('.xz-xl').hide()
-    });
-
-
-    /*点击高亮*/
-  
-</script>
+<script src="/js/common.js"></script>
 </body>
 </html>

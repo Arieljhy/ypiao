@@ -175,6 +175,7 @@
     <div class="Bg-w w">
         <div class="dengluzhuce dengluzhuce1">
             <div class="tanchuang-dz">
+                <div class="tanchang-1"></div>
                 <div class="DengluZhuce"><!-- 登录注册 -->
                     <ul class="dz-xuanze">
                         <li>
@@ -188,10 +189,10 @@
                             <input name="phone" type="text" class="dz-ipu dz-ipu-sj" maxlength="11" placeholder="请输入手机号" value=""/>
                             <input name="upwd" type="password" class="dz-ipu dz-ipu-mima" placeholder="请输入密码" />
                             <input id="login_btn" class="dz-denglu dz-denglu1" value="立即登录" readonly />
-                            <input id="rememberUser" type="checkbox" class="l"><label class="l" for="rememberUser">保存密码</label> 
+                            <input id="rememberUser" type="checkbox" class="l"><label class="l" for="rememberUser" style="user-select: none">保存密码</label> 
                                 
                             <a href="javascript:;">
-                                <p class="r DengLu" onclick="bb2()">忘记密码</p>
+                                <p class="r DengLu" onclick="bb2()" unselected="on">忘记密码</p>
                             </a>
 					    </div>
 					</form>                
@@ -201,7 +202,11 @@
     </div>
 	</div>
 
-
+    <div class="kf-fix">
+            <a href="/shopcart.html">
+                <i class="iconfont">&#xe668;</i>
+            </a>
+    </div>
  <!--底部  -->
     <div class="recommendation w">
      <ul>
@@ -325,39 +330,7 @@
     <script src="/js/staticjs/jquery-1.7.min.js"></script>
     <script src="/js/log_reg.js"></script>
     <script src="/js/staticjs/jquery.cookie.js"></script>
+    <script src="/js/common.js"></script>
 
- <script type="text/javascript">
-    
-     /*城市列表的隐藏与显示*/
-     $('.hed-cshi').hover(function(){
-         $('.chengshi').show()
-     },function(){
-         $('.chengshi').hide()
-     })
-
-
-     $('.chenshi').hover(function(){
-         $('.chengshi').show()
-     },function(){
-         $('.chengshi').hide()
-     })
-     /*全部演出*/
-
-     $('.dh-fl').hover(function(){
-         $('.dh-xl').show()
-     },function(){
-         $('.dh-xl').hide()
-     })
-
-     /*下载*/
-
-     $('.ul-xz').hover(function(){
-         $('.xz-xl').show()
-     },function(){
-         $('.xz-xl').hide()
-     })
-    
-    
- </script>
  </body>
 </html>

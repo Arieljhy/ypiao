@@ -178,6 +178,7 @@ header{position:fixed;top:0; z-index:999;}
     -webkit-box-shadow: 0 0 8px #d0d3d5;
 
     z-index: 200;
+    user-select: none;
 }
 .xl-xs.ico {
     background-position: -195px 0;
@@ -300,6 +301,7 @@ header{position:fixed;top:0; z-index:999;}
 }
 /*登录之后显示个人中心*/
 .su-wd{
+    display: none;
     height: 50px;
     line-height:50px; 
     margin:auto 20px;
@@ -325,6 +327,7 @@ header{position:fixed;top:0; z-index:999;}
 }
 .su-wd .wd-name{
     float: left;
+    width: 30px;
     height:40px;
     font-size:12px ;
     margin:0 5px;
@@ -335,7 +338,7 @@ header{position:fixed;top:0; z-index:999;}
 }
 .wd-tanchuang2{
     display: none;
-    width: 100px;
+    width: 120px;
     height:190px;
     border-radius: 3px;
     box-shadow: 0 0 8px #d0d3d5;
@@ -352,14 +355,19 @@ header{position:fixed;top:0; z-index:999;}
 }
 .wd-tanchuang2 a{
     display: block;
-    width: 90px;
+    width: 110px;
     height:30px;
     line-height: 30px;
 }
 .wd-tanchuang2 a li{
-    width: 90px;
+    width: 110px;
     border-bottom:1px solid #e2e5e6;
     
+}
+.wd-tanchuang2 .i-ico{
+    font-size: 13px;
+    font-style: normal;
+    margin-left:5px;
 }
 
 
