@@ -11,6 +11,12 @@
     right: 40px;
     bottom:120px;
     z-index: 999; 
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+}
+.gwc-fix:hover{
+   background-color: #ff6633;
+   
 }
 .gwc-fix a{
     color: #fff;
@@ -30,7 +36,7 @@
     line-height: 16px;
     
     border-radius: 50%;
-    background-color:#ff6633;
+    background-color:red;
     
 }
 .kf-fix{
@@ -44,6 +50,11 @@
     right: 40px;
     bottom:63px; 
     z-index: 999;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(243, 114, 29, 0.2);
+}
+.kf-fix:hover{
+    background-color: #ff6633;
 }
 .kf-fix a{
     color: #fff;
@@ -54,7 +65,14 @@
 }
 /* �Ƽ� */
 
-
+footer {
+    background-color: #fafafa;
+    border-top: 1px solid #E5E5E5;
+    
+    line-height: 55px;
+    text-align: center;
+    width: 100%;
+}
 .recommendation {
     width: 1200px;
     margin: 20px auto 0;
@@ -257,14 +275,7 @@
 
 
 /*footer*/
-footer {
-    background-color: #fafafa;
-    border-top: 1px solid #E5E5E5;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    width: 100%;
-}
+
 
 .footer_boml {
     display: flex;

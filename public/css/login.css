@@ -145,19 +145,25 @@
 }
 .dz-ipu.dz-ipu-yzm-l{
     width:220px;
-    border-right: none;
+    
     float: left;
     
 
 }
+#canvas{
+    margin-left: -15px;
+    
+}
 .dz-ipu.dz-ipu-yzm-r{
-    width:125px;
+    width:120px;
     float: left;
     padding: 0;
     cursor:pointer;
     text-align: center;
     color:#ff6633;
     font-size:16px;
+    overflow: hidden;
+    margin-left: 3px;
 
 }
 
@@ -197,6 +203,28 @@ div.nickname input:checked+label::before{
     content: url(/img/login/xz.png);
     /* background-color: #ff6633; */
     border: none;
+}
+
+/*//*/
+.dz-zc{
+    position: relative;
+}
+
+.dz-zc.on::after{
+    display: inline-block;
+    content:"\e612";
+    width:10px;
+    height:10px;
+    position: absolute;
+    top: 12px;
+    right:12px;
+    z-index: 9999;
+    color: #ff6633;
+    font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 }
 
 

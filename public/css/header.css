@@ -30,11 +30,7 @@ header{position:fixed;top:0; z-index:999;}
     color:#fe5929;
 
 }
-.iconfont{
-    font-family:"iconfont" !important;
-    font-size:16px;
-    font-style:normal;
-}
+
 .hed .hed-cshi{
     float:left;
     display: block;
@@ -43,6 +39,7 @@ header{position:fixed;top:0; z-index:999;}
     margin: 0 48px 0 0;
     padding: 0 15px;
     position: relative;
+    user-select: none;
 
 }
 .chengshi{
@@ -74,6 +71,7 @@ header{position:fixed;top:0; z-index:999;}
 .hed-ul{
     float: left;
     width:550px;height:72px;
+    user-select: none;
 }
 .l.hed-ul li{
     float: left;
@@ -292,13 +290,18 @@ header{position:fixed;top:0; z-index:999;}
     display:block;
     border: 1px solid #dedede;
     border-radius: 22px;
-    color: #7f8c8d;
+    color: #ff6633;
     font-size: 12px;
     height: 38px;
     padding-left: 16px;
     width: 246px;
     margin:auto 0;
+    transition: width 250ms linear;
+
 }
+.hed .hed-su .su-ipt:focus{
+    width:300px;
+} 
 /*登录之后显示个人中心*/
 .su-wd{
     display: none;

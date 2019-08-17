@@ -62,12 +62,12 @@ $(document).scroll(function() {
  /* 滚动监听 */
       // 定义一个获取所有模块的距离高度
       var arrOffsetTop = [
-        $('#louti3').offset().top,
-        $('#louti4').offset().top,
-        $('#louti5').offset().top,
-        $('#louti6').offset().top,
-        $('#louti7').offset().top,
-        $('#louti8').offset().top    
+        $('#louti3').offset(),
+        $('#louti4').offset(),
+        $('#louti5').offset(),
+        $('#louti6').offset(),
+        $('#louti7').offset(),
+        $('#louti8').offset()    
      ];
 
      // 获取每个div的平均高度
