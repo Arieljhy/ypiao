@@ -66,4 +66,12 @@ function drawPic() {
     }
     return code;
 }
+//初始化验证码
+var veCode = drawPic();
+$("#zc-yzm-cc").val(veCode);
+$("#reflashCode").click (function (e) {
+        e.preventDefault();
+        veCode = drawPic();
+        $("#zc-yzm-cc").val(veCode);
+})
 })

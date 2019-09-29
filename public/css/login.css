@@ -8,7 +8,7 @@
 }
 .Bg-w{
     height: 610px;
-    background-image: url(/img/login/bg.png);
+    background-image: url(../img/login/bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	min-width:1200px;
@@ -128,7 +128,7 @@
     margin-right:5px;    
 }
 #rememberUser:checked+label::before{
-    content:url(/img/login/dxk.png);
+    content:url(../img/login/dxk.png);
     border: none;
     
 }
@@ -169,9 +169,32 @@
 
 .nickname{
     width:100%;
+   min-height: 50px;
     float:left;
     font-size: 18px;
     position: relative;
+}
+.dz-zc-4.dz-zc{
+  float: left;
+    width:233px;
+    height:50px;
+}
+.gender{
+   float: left;
+    width:130px;
+    height:50px;
+ 
+    box-sizing: border-box;
+}
+.nickname div.gender label.lab1{
+   float: left;
+    width:50px;
+    margin: 10px 0 0 10px;
+}
+.nickname div.gender label.lab2{
+  float: left;   
+    width:50px;   
+    margin: 10px 0 0 10px; 
 }
 .dz-ipu.nik-l{
     width:217px;
@@ -182,10 +205,7 @@ div.nickname input:nth-child(2){
 #female{
     display: none;
 }
-div.nickname label{
-    position: relative;  
-    margin-right: 5px; 
-}
+
 div.nickname label::before{
     display: inline-block;
     content: "";
@@ -195,14 +215,13 @@ div.nickname label::before{
     text-align: center;
     border-radius: 50%;
     border: 1px solid rgb(219, 219, 219);
-    margin-right: 5px;
-    
 }
-
 div.nickname input:checked+label::before{
-    content: url(/img/login/xz.png);
-    /* background-color: #ff6633; */
+    content: url(../img/login/xz.png);
     border: none;
+}
+#yanzhnegma{
+    float: left;
 }
 
 /*//*/
@@ -221,10 +240,10 @@ div.nickname input:checked+label::before{
     z-index: 9999;
     color: #ff6633;
     font-family: "iconfont" !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 

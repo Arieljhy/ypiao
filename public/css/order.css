@@ -1113,7 +1113,7 @@ font-size: 14px;
 .wd-xxx-r{
     width: 890px;    
     height:400px;
-    background-image: url(/img/order/bg1.jpg);
+    background-image: url(../img/order/bg1.jpg);
     background-size:100%;
     position: relative; 
 }

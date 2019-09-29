@@ -14,7 +14,7 @@
     height: 296px;
     min-width: 1300px;
     margin-bottom: 20px;
-    background-image: url(/img/detail/xiangqing-bg.jpg);
+    background-image: url(../img/detail/xiangqing-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -57,6 +57,53 @@
     font-size:14px;
     color: #fff;
     margin-bottom: 28px;
+}
+.w-xinxi #like+label{
+    
+    display: block;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border:1px solid #FFE6D5;
+    background-color: transparent;
+    cursor: pointer;
+   
+    position: absolute;
+    left:0px;
+    bottom:0px;
+}
+ .w-xinxi #like+label i{
+    display:block;  
+    font-size: 23px;
+    color:#fff;
+}
+.w-xinxi #like:checked+label i{
+    color:#FF5219;
+} 
+.w-xinxi #collect+label{
+    display: block;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border:1px solid #FFE6D5;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    left:60px;
+    bottom:0px;
+}
+ .w-xinxi #collect+label i{
+    display:block;
+   
+    font-size: 18px;
+    color:#fff;
+}
+.w-xinxi #collect:checked+label i{
+    color:#FF5219;
 }
 .w-r{
     height: 220px;
@@ -135,9 +182,7 @@
 .top-danbao{
     color: #45d17d;
 }
-.top-danbao i{
 
-}
 
 /*分类左边*/
 .details{
@@ -216,9 +261,11 @@
 
 .xz-piaodang{
     padding: 7px 7px;
+    width: 100%;
     min-height: 130px;
 
     position: relative;
+    
 }
 .piaodang{
     padding: 10px 20px;
@@ -226,7 +273,12 @@
     left: 72px;
     top: 0;
 }
-
+.piaodang::after{
+    display: block;
+    content: "";
+    
+    clear: both;
+}
 .piaodang li{
     min-width: 80px;
     height: 36px;
@@ -243,9 +295,8 @@
     margin-bottom: 20px;
     cursor: pointer;
 }
-
-
 .xz-number{
+    margin-top:30px; 
     padding: 7px 7px;
     min-height: 60px;
     overflow: hidden;
@@ -319,16 +370,22 @@
     height: 36px;
     line-height: 36px;
     text-align: center;
-
-    color: #000;
-    background-image: linear-gradient(to bottom,#ffcc00, #ff9a1d);
-
     float: left;
+    color: #fff;
     padding: 2px 12px;
     margin-right: 12px;
     border-radius: 24px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+.btn li.add-cart{
+    
+    background: linear-gradient(to bottom,#ffcc00, #ff9a1d);
+
+}
+.btn li.lj-buy{
+    background-color: #FF5219;
+
 }
 
 

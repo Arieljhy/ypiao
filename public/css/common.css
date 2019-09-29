@@ -23,7 +23,7 @@ body{
     user-select: none;
 }
 .ico {
-    background-image: url(/img/login/jl.png);
+    background-image: url(../img/login/jl.png);
 }
 
 .l{
@@ -63,14 +63,13 @@ input{
 /*iconfont*/
 @font-face {
     font-family: 'iconfont';  /* project id 1352350 */
-    src: url('//at.alicdn.com/t/font_1352350_vli3aocs1df.eot');
-    src: url('//at.alicdn.com/t/font_1352350_vli3aocs1df.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_1352350_vli3aocs1df.woff2') format('woff2'),
-    url('//at.alicdn.com/t/font_1352350_vli3aocs1df.woff') format('woff'),
-    url('//at.alicdn.com/t/font_1352350_vli3aocs1df.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_1352350_vli3aocs1df.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_1352350_orelvzoi2b.eot');
+    src: url('//at.alicdn.com/t/font_1352350_orelvzoi2b.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1352350_orelvzoi2b.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1352350_orelvzoi2b.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1352350_orelvzoi2b.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1352350_orelvzoi2b.svg#iconfont') format('svg');
   }
-  
     .iconfont {
         font-family: "iconfont" !important;
         font-size: 16px;

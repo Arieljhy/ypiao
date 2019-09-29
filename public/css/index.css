@@ -97,7 +97,7 @@
     height:30px; 
     margin: 0 auto;
     background: no-repeat;
-    background-image: url(/img/login/jl.png);
+    background-image: url(../img/login/jl.png);
 }
 .radiu .lt0{
     background-position:-85px -292px;
@@ -209,26 +209,40 @@
     line-height: 60px;
     position: relative;
 }
-.t-ico2{
+
+.t-tit{
     display:block;
-    width: 87px;
+    width: 100px;
     height: 38px;
     margin: auto 0;
-    font-size: 38px;
-    background:#f99056;
-    border-bottom-right-radius:40%;
-    border-top-right-radius:40%;
-    position: absolute;
-    top: 10px;
+    color:#f99056;
 
-}
-.t-tit{
     font-size: 14px;
     color: #fff;
-    padding-left: 15px;
+  
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0px;
+}
+.t-tit i{
+    width: 100px;
+    height: 38px;
+    font-size: 38px;
+    color:#f99056;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+    
+}
+.t-tit span{
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 32;
+    
 }
 .t-gd{
     width: 67px;
